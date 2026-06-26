@@ -135,25 +135,18 @@ HERO
 =========================== */
 
 .hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    padding-left:120px;
 
-height:100vh;
+    background-image:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("./hero.jpg");
 
-display:flex;
-
-align-items:center;
-
-padding:0 8%;
-
-background:
-
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-
-url("hero.jpg");
-
-background-size:cover;
-
-background-position:center;
-
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .hero-content{
