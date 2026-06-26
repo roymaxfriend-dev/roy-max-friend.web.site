@@ -844,3 +844,27 @@ transform:translateY(0);
 }
 
 }
+.contact-card p{
+
+line-height:1.8;
+text-align:center;
+
+}
+
+/* ================= HERO ANIMATION ================= */
+
+@keyframes heroZoom{
+
+0%{
+
+background-size:100%;
+
+}
+
+100%{
+
+background-size:110%;
+
+}
+
+}
