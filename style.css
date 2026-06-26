@@ -5,9 +5,16 @@
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:#0e1f12;
-    color:white;
+
+font-family:'Poppins',sans-serif;
+
+background:#08160d;
+
+color:white;
+
+overflow-x:hidden;
+
+}
 }
 
 .header{
