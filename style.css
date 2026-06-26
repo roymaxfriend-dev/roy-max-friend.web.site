@@ -697,3 +697,73 @@ grid-template-columns:1fr;
 }
 
 }
+/* ================= CONTACT ================= */
+
+.contact{
+
+padding:120px 8%;
+background:#ffffff;
+
+}
+
+.contact-grid{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+
+}
+
+.contact-card{
+
+background:#fff;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.contact-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.contact-card h3{
+
+font-size:24px;
+
+margin-bottom:18px;
+
+color:#2E7D32;
+
+}
+
+.contact-card p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#666;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
