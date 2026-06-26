@@ -673,3 +673,73 @@ line-height:1.8;
     }
 
 }
+/* ==========================
+   MOBILE
+========================== */
+
+@media screen and (max-width:768px){
+
+.header{
+    flex-direction:column;
+    padding:20px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.hero{
+    height:auto;
+    padding:120px 25px 80px;
+}
+
+.hero h1{
+    font-size:42px;
+    line-height:1.2;
+}
+
+.about{
+    display:flex;
+    flex-direction:column;
+}
+
+.about img{
+    width:100%;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.process-card{
+    width:100%;
+}
+
+.process-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.products-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.product-card{
+    width:100%;
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+}
