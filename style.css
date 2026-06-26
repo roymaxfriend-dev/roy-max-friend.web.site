@@ -1,172 +1,189 @@
+/* ===========================
+   CLASSSTAM WEBSITE
+   STYLE.CSS v2.0
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+
+--green:#2E7D32;
+--green-light:#43A047;
+--dark:#07120B;
+--dark2:#102418;
+--white:#ffffff;
+--gray:#d9d9d9;
+--shadow:0 15px 40px rgba(0,0,0,.18);
+
+}
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
 }
 
 body{
 
 font-family:'Poppins',sans-serif;
-
-background:#08160d;
-
-color:white;
-
+background:var(--dark);
+color:var(--white);
 overflow-x:hidden;
 
 }
-}
+
+/* ================= HEADER ================= */
 
 .header{
-    position:fixed;
-    top:0;
-    width:100%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px;
-    background:rgba(0,0,0,.45);
-    backdrop-filter:blur(12px);
-    z-index:1000;
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:22px 80px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(8,20,12,.55);
+
+backdrop-filter:blur(14px);
+
+z-index:999;
+
+transition:.35s;
+
 }
 
 .logo{
-    font-size:32px;
-    font-weight:bold;
-    color:#6bd63c;
+
+font-size:34px;
+font-weight:800;
+letter-spacing:2px;
+color:#7CFF6B;
+
+}
+
+nav{
+
+display:flex;
+gap:35px;
+
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:30px;
-    transition:.3s;
+
+color:white;
+text-decoration:none;
+font-size:16px;
+font-weight:500;
+transition:.3s;
+
 }
 
 nav a:hover{
-    color:#6bd63c;
+
+color:#7CFF6B;
+
 }
+
+/* ================= HERO ================= */
 
 .hero{
 
 height:100vh;
 
+display:flex;
+align-items:center;
+
+padding-left:120px;
+
 background:
 
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-
+linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.62)),
 url("hero.jpg");
 
 background-size:cover;
-
 background-position:center;
-
-display:flex;
-
-align-items:center;
-
-padding-left:100px;
 
 }
 
-.hero-text{
+.hero-content{
 
-    max-width:700px;
+max-width:760px;
 
 }
 
 .hero h1{
 
-    font-size:65px;
-
-    line-height:1.1;
-
-    margin-bottom:25px;
+font-size:72px;
+line-height:1.08;
+margin-bottom:25px;
 
 }
 
 .hero p{
 
-    font-size:22px;
-
-    color:#ddd;
-
-    margin-bottom:40px;
+font-size:22px;
+line-height:1.8;
+color:#ececec;
+margin-bottom:40px;
 
 }
 
 .btn{
 
-    display:inline-block;
+display:inline-block;
 
-    background:#69d43c;
+padding:18px 45px;
 
-    color:white;
+background:linear-gradient(90deg,#56c84e,#2E7D32);
 
-    padding:18px 40px;
+color:white;
 
-    border-radius:50px;
+text-decoration:none;
 
-    text-decoration:none;
+border-radius:60px;
 
-    transition:.3s;
+font-weight:600;
+
+transition:.35s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.35);
 
 }
 
 .btn:hover{
 
-    background:#52b62d;
-
-    transform:translateY(-3px);
-
-}
-.hero-content{
-
-max-width:700px;
+transform:translateY(-5px);
 
 }
 
-.hero-content h1{
-
-font-size:70px;
-
-line-height:1.1;
-
-margin-bottom:30px;
-
-}
-
-.hero-content p{
-
-font-size:22px;
-
-color:#dddddd;
-
-margin-bottom:40px;
-
-line-height:1.7;
-
-}
+/* ================= ABOUT ================= */
 
 .about{
 
+padding:120px 8%;
 background:white;
-
 color:#222;
-
-padding:120px 80px;
 
 }
 
 .container{
 
 display:flex;
-
 align-items:center;
-
 justify-content:space-between;
-
-gap:80px;
+gap:70px;
 
 }
 
@@ -178,19 +195,16 @@ flex:1;
 
 .left h2{
 
-font-size:48px;
-
-margin-bottom:20px;
-
-color:#163b1b;
+font-size:50px;
+margin-bottom:25px;
+color:#245C2B;
 
 }
 
 .left p{
 
-font-size:20px;
-
-line-height:1.8;
+font-size:19px;
+line-height:1.9;
 
 }
 
@@ -203,9 +217,146 @@ flex:1;
 .right img{
 
 width:100%;
+border-radius:18px;
+box-shadow:var(--shadow);
 
-border-radius:20px;
+}
 
-box-shadow:0 20px 60px rgba(0,0,0,.2);
+/* ================= STATS ================= */
+
+.stats{
+
+background:#14341D;
+
+padding:90px 8%;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+}
+
+.stat{
+
+background:#1D4E2A;
+
+padding:45px;
+
+border-radius:18px;
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.stat:hover{
+
+transform:translateY(-10px);
+
+}
+
+.stat h3{
+
+font-size:48px;
+color:#8CFF73;
+
+margin-bottom:10px;
+
+}
+
+.stat p{
+
+font-size:18px;
+
+}
+
+/* ================= SECTION TITLE ================= */
+
+.section-title{
+
+font-size:48px;
+
+text-align:center;
+
+margin-bottom:70px;
+
+color:#1f5d2d;
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+.header{
+
+padding:20px;
+
+}
+
+.hero{
+
+padding:40px;
+
+text-align:center;
+
+justify-content:center;
+
+}
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.container{
+
+flex-direction:column;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+nav{
+
+display:none;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+.logo{
+
+font-size:28px;
+
+}
 
 }
