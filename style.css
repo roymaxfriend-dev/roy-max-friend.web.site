@@ -779,7 +779,35 @@ color:#666;
 }
 
 .hero p{
+.btn{
 
+display:inline-block;
+
+padding:18px 45px;
+
+background:linear-gradient(90deg,#69d74d,#2E7D32);
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+color:white;
+
+transition:.35s;
+
+animation:pulse 2.5s infinite;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 12px 30px rgba(0,0,0,.35);
+
+}
     font-size:18px;
 
 }
