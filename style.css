@@ -870,3 +870,20 @@ background-size:110%;
 }
 
 }
+@keyframes fadeLeft{
+
+0%{
+
+opacity:0;
+transform:translateX(-60px);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateX(0);
+
+}
+
+}
