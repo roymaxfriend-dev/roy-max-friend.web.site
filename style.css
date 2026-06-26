@@ -133,21 +133,18 @@ color:#72ff63;
 /* ================= HERO VIDEO ================= */
 
 .hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    padding-left:120px;
 
-position:relative;
+    background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("images/hero.jpg");
 
-height:100vh;
-
-display:flex;
-
-align-items:center;
-
-justify-content:flex-start;
-
-padding:0 8%;
-
-overflow:hidden;
-
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .hero-video{
