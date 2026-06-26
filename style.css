@@ -191,9 +191,11 @@ z-index:-2;
 
 max-width:700px;
 
-color:white;
+position:relative;
 
-animation:fadeUp 1.5s ease;
+z-index:2;
+
+animation:fadeLeft 1.4s ease;
 
 }
 
