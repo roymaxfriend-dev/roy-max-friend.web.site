@@ -133,18 +133,22 @@ color:#72ff63;
 /* ================= HERO VIDEO ================= */
 
 .hero{
+    position:relative;
     height:100vh;
     display:flex;
     align-items:center;
-    padding-left:120px;
+    padding-left:8%;
+    overflow:hidden;
 
     background:
-        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url("images/hero.jpg");
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("images/hero.jpg");
 
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
+
+    animation:heroZoom 18s ease-in-out infinite alternate;
 }
 
 .hero-video{
