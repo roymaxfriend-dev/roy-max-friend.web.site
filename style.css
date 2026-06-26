@@ -767,3 +767,34 @@ grid-template-columns:1fr;
 }
 
 }
+.contact-card a{
+
+text-decoration:none;
+color:#2E7D32;
+font-weight:600;
+transition:.3s;
+
+}
+
+.contact-card a:hover{
+
+color:#69d74d;
+
+}
+
+.contact-card{
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+min-height:200px;
+
+}
+
+.contact-card p{
+
+line-height:1.8;
+text-align:center;
+
+}
