@@ -759,7 +759,29 @@ line-height:1.8;
 color:#666;
 
 }
+@media screen and (max-width:768px){
 
+.hero{
+
+    padding:120px 25px;
+    text-align:center;
+    justify-content:center;
+
+}
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+}
 /* Mobile */
 
 @media(max-width:768px){
