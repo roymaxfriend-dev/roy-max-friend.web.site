@@ -1,1 +1,15 @@
+window.addEventListener("scroll",function(){
 
+const header=document.querySelector(".header");
+
+if(window.scrollY>50){
+
+header.style.background="#08140d";
+
+}else{
+
+header.style.background="rgba(0,0,0,.45)";
+
+}
+
+});
